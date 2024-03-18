@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>Registration Form</title>
+        <style>
+            body {
+                background-color: cornflowerblue;
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            h1 {
+                text-align: center;
+            }
+            form {
+                width: 300px;
+                margin: 0 auto;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            input[type="password"]  {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                border: none;
+            }
+
+            input[type="submit"] {
+            background-color: dodgerblue;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            }
+
+            input[type="submit"]:hover {
+            background-color: cornflowerblue;
+            }
+
+            label {
+            display: block;
+            margin-bottom: 5px;
+            }
+    </style>
+    </head>
+    <body>
+        <h1>Registration Form</h1>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="phone number">Phone Number:</label>
+            <input type="text" id="phone number" name="phone number" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="none">None</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="prefer not to say">Prefer Not To Say</option>
+            </select>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password:</label>
+            <input type="text" id="password" name="password" required>
+
+            <label for="confirm password">Confirm Password:</label>
+            <input type="text" id="confirm password" name="confirm password" required>
+
+            <input type="submit" value="Create Account">
+        </form>
+    </body>
+</html>
